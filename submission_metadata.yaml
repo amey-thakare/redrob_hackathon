@@ -1,0 +1,57 @@
+team_name: Amey
+
+primary_contact:
+  name: Amey Thakare
+  email: thakareamey2005@gmail.com
+  phone: ""
+
+team_members:
+  - name: Amey Thakare
+    email: thakareamey2005@gmail.com
+
+github_repo: https://github.com/amey-thakare/redrob_hackathon
+
+sandbox_link: "https://redrobhackathon-vsebvv68v38q3mgrswjtqs.streamlit.app/"
+
+reproduce_command: >
+  python rank.py --candidates data/candidates.jsonl --out outputs/submission.csv
+
+compute:
+  operating_system: Linux/macOS
+  cpu: CPU Only
+  ram_gb: 16
+  python_version: "3.12"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+
+models_used:
+  - sentence-transformers/all-MiniLM-L6-v2
+  - cross-encoder/ms-marco-MiniLM-L-6-v2
+
+runtime:
+  stage1: 92 seconds
+  total: "<5 minutes"
+
+ai_usage_summary: >
+  ChatGPT was used for brainstorming, code review, debugging,
+  and improving the feature engineering pipeline. All ranking
+  logic, implementation, testing, validation, and optimization
+  were performed by the team.
+
+methodology_summary: >
+  A three-stage deterministic ranking pipeline was implemented.
+  Stage 1 performs rule-based candidate scoring using recruiter
+  signals, AI skill quality, semantic job matching, product
+  engineering experience, ranking-system expertise, production ML
+  evidence, company quality, and validator-based honeypot
+  detection. Stage 2 reranks the top candidates using Sentence
+  Transformers semantic similarity. Stage 3 applies a CrossEncoder
+  reranker to refine the final ranking. The top 100 candidates are
+  exported with normalized scores and candidate-specific
+  reasoning.
+
+declarations:
+  read_spec: true
+  no_collusion: true
+  reproduction_tested: true
+  cpu_only_execution: true

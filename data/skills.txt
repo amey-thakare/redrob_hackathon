@@ -1,0 +1,41 @@
+Python
+Java
+C++
+TensorFlow
+PyTorch
+LangChain
+LlamaIndex
+Haystack
+OpenAI
+Claude
+Gemini
+LLM
+Large Language Models
+RAG
+Retrieval Augmented Generation
+Embeddings
+Vector Database
+FAISS
+Milvus
+Pinecone
+Qdrant
+Weaviate
+Elasticsearch
+FastAPI
+Flask
+Django
+Docker
+Kubernetes
+AWS
+Azure
+GCP
+PostgreSQL
+MongoDB
+Redis
+Kafka
+Spark
+Airflow
+Machine Learning
+Deep Learning
+NLP
+Computer Vision

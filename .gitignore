@@ -1,0 +1,36 @@
+# Virtual Environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Outputs
+outputs/
+*.csv
+
+# Dataset (optional if not required in GitHub)
+data/candidates.jsonl
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+
+# Model files
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.h5
+
+# HuggingFace cache
+.cache/
